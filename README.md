@@ -129,10 +129,10 @@ You can add rst at any time like installation.rst
 
 ## Add images in rst
 
-.. code::
-
+```
     .. image:: img/installation/install_requirements.png
     :scale: 50 %
     :alt: Install
     :align: center
+```
 
