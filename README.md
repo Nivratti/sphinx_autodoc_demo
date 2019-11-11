@@ -75,3 +75,64 @@ make html
 pip install mock
 pip install sphinx_rtd_theme
 ```
+
+## Modify sidebar
+
+To modify sidebar you need to dit `index.rst` located under `docs/source/conf` folder.
+
+### Add menu
+
+1. Menu will be added using toctree
+
+```
+
+.. toctree::
+    :maxdepth: 3
+    :caption: Get Started
+
+    installation
+    another_rst_file_name
+
+.. toctree::
+    :maxdepth: 4
+    :caption: Packages
+
+    utils
+    another_rst_file_name
+```
+
+2. run `make html`. You need to run make html after changing any doc.
+
+```
+make html
+```
+
+## Multilevel sidebar menu.
+
+use multiple headers to auto generate multi-level.
+
+```
+utils
+*************
+
+Submodules
+==============
+
+util_demo
+-----------------------
+
+```
+
+## Add new `rst`
+
+You can add rst at any time like installation.rst
+
+## Add images in rst
+
+.. code::
+
+    .. image:: img/installation/install_requirements.png
+    :scale: 50 %
+    :alt: Install
+    :align: center
+
