@@ -14,6 +14,7 @@ pip install Sphinx
 ```console
 cd /path/to/project
 mkdir docs
+```
 
 3. run sphinx-quickstart comamnd
 
